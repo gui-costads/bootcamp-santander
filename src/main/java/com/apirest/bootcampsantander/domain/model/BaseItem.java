@@ -14,6 +14,9 @@ public class BaseItem {
     private String icon;
     private String description;
 
+    public BaseItem() {
+    }
+
     public BaseItem(String icon, String description) {
         this.icon = icon;
         this.description = description;

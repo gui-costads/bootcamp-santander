@@ -18,6 +18,9 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> newsList;
 
+    public User() {
+    }
+
     public User(String name, Account account, Card card, List<Feature> featureList, List<News> newsList) {
         this.name = name;
         this.account = account;

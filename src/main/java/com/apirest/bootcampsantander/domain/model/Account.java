@@ -25,6 +25,9 @@ public class Account {
         this.limit = limit;
     }
 
+    public Account() {
+    }
+
     public Long getId() {
         return id;
     }
