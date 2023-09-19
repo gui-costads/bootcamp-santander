@@ -23,7 +23,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User createUser(User userToCreate) {
-        if (userToCreate != null && userRepository.existsById(userToCreate.getId())) {
+
+        if (userToCreate.getId() != null && userRepository.existsById(userToCreate.getId())) {
             throw new UserAlreadyExistsException("User is already exists");
         }
         return userRepository.save(userToCreate);
